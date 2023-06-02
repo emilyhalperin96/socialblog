@@ -24,5 +24,8 @@ login_manager.login_view = 'users.login'
 
 from halpreadsblog.error_pages.handlers import error_pages
 from halpreadsblog.core.views import core
+from halpreadsblog.users.views import users
+
 app.register_blueprint(core)
+app.register_blueprint(users)
 app.register_blueprint(error_pages)
